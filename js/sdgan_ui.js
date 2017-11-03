@@ -266,7 +266,7 @@ window.sdgan = window.sdgan || {};
         pauseUserInput();
         for (var i = 0; i < cfg.ui.nids; ++i) {
             for (var o = 0; o < cfg.ui.nobs; ++o) {
-                drawCell(getGridCtx(i, o), 'Thinking...');
+                drawCell(getGridCtx(i, o), 'Painting...');
             }
         }
 
@@ -290,7 +290,7 @@ window.sdgan = window.sdgan || {};
 
             pauseUserInput();
             for (var o = 0; o < cfg.ui.nobs; ++o) {
-                drawCell(getGridCtx(i, o), 'Thinking...');
+                drawCell(getGridCtx(i, o), 'Painting...');
             }
 
             setTimeout(function () {
@@ -311,7 +311,7 @@ window.sdgan = window.sdgan || {};
 
             pauseUserInput();
             for (var i = 0; i < cfg.ui.nids; ++i) {
-                drawCell(getGridCtx(i, o), 'Thinking...');
+                drawCell(getGridCtx(i, o), 'Painting...');
             }
 
             setTimeout(function () {
@@ -357,7 +357,7 @@ window.sdgan = window.sdgan || {};
                     var tr_key = hash_io_key(a_io[0], b_io[1]);
                     var bl_key = hash_io_key(b_io[0], a_io[1]);
 
-                    lerpClear('Thinking...', 
+                    lerpClear('Painting...', 
                         io_key_to_Gz[select0], 
                         io_key_to_Gz[tr_key], 
                         io_key_to_Gz[io_key], 
@@ -413,10 +413,10 @@ window.sdgan = window.sdgan || {};
             }
         }
         else {
-            // Render "Thinking..."
+            // Render "Painting..."
             for (var i = 0; i < cfg.ui.nids; ++i) {
                 for (var o = 0; o < cfg.ui.nobs; ++o) {
-                    drawCell(getGridCtx(i, o), 'Thinking...');
+                    drawCell(getGridCtx(i, o), 'Painting...');
                 }
             }
             lerpClear('', '', '', '', '');
